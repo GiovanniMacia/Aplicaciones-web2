@@ -1,0 +1,23 @@
+¿Qué tipo de proceso realiza fetch()?
+fetch() realiza una solicitud de red HTTP (petición cliente-servidor). Es una función 
+de la Web API del navegador que permite pedir recursos externos —como archivos JSON, 
+imágenes o datos de una API— desde JavaScript, sin necesidad de recargar la página.
+
+
+¿Por qué es asíncrono?
+Porque una solicitud de red toma un tiempo indeterminado para completarse 
+(depende de la velocidad de la red, el servidor, el tamaño del recurso, etc.
+). Si fetch() fuera sincrónico, bloquearía el hilo principal de JavaScript, 
+congelandole la interfaz al usuario hasta que llegue la respuesta. Al ser asíncrono, 
+el navegador puede seguir ejecutando otras tareas mientras espera, y cuando 
+la respuesta llega, retoma la ejecución. Por eso se trabaja con Promesas y el 
+patrón async/await.
+
+
+
+
+¿Qué protocolo utiliza en este caso?
+Utiliza el protocolo HTTP (o HTTPS si el servidor tiene certificado SSL). 
+Es el protocolo de transferencia de hipertexto sobre el que se basa toda la 
+comunicación web. En este proyecto en particular, al servirlo localmente con
+ una herramienta como Live Server, se usa http://.
