@@ -1,0 +1,33 @@
+###viendo peticiones
+###-------------------------------------------------
+#GET -   GET https://ies21.edu.ar/HTTP/1.1 200 OK--> es la linea de peticion
+
+GET https://ies21.edu.ar/
+
+
+###--------------------------------------------------
+#GET -usuarios platzi
+
+GET  https://69cbcb780b417a19e07b42c1.mockapi.io/api/v1/Productos
+
+###--------------------------------------------------
+#GET -local
+
+GET  https://localhost;3000/usuarios
+
+###--------------------------------------------------
+
+#POST -
+POST https://localhost;
+
+Content-Type: `text/plain` 
+
+###--------------------------------------------------
+
+#PUT -
+PUT  https://localhost;
+
+###--------------------------------------------------
+
+#DELETE-
+DELETE  https://localhost;

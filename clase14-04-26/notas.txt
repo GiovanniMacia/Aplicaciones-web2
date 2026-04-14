@@ -1,0 +1,1 @@
+http es un protocolo para comunicar al cliente, protocolo cliente-servidor
